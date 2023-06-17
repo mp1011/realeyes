@@ -10,12 +10,9 @@ module Services
         end
 
         def transform(input)
-            output = input 
-            @transformers.each do |t|
-                output = t.transform(output)
-            end
-
-            output
+            @transformers.reduce(input) do |output,transformer|                
+                transformer.transform(output)
+            end 
         end
     end
 end

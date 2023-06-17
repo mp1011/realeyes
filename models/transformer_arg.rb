@@ -12,7 +12,6 @@ module Models
             return arg if arg.is_a?(type)
 
             if arg.is_a?(String)
-                return arg if type == String
                 return arg.to_i if type == Integer 
     
                 raise "Cannot convert string to #{type}"                
