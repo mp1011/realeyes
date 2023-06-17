@@ -1,0 +1,22 @@
+ToLower:
+  name: To Lower
+  help: Converts the input to lower case
+Prepend:
+  help: Adds a prefix to the input
+  args:
+    prefix:
+      type: String
+Replace:
+  help: Replaces text within a string
+  args:
+    find:
+      type: String
+    replace:
+      type: String
+Slice:
+  help: Gets a substring given a starting position and a length
+  args:
+    start:
+      type: Integer
+    length:
+      type: Integer

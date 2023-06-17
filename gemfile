@@ -1,0 +1,8 @@
+group :test do
+  gem "rspec"
+  gem "rspec-core"
+  gem "rspec-expectations"
+end
+
+gem "pry"
+gem "pry-byebug"
